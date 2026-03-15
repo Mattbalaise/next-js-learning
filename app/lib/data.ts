@@ -11,7 +11,8 @@ import { formatCurrency } from './utils';
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
 
-export async function fetchRevenue() {
+export async function fetchRevenue() 
+{
   try {
     // Artificially delay a response for demo purposes.
     // Don't do this in production :)
